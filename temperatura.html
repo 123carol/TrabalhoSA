@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+ 
+<head>
+   <title>Trabalho da S.A.</title>
+   <link rel="stylesheet" href="css/temperatura.css">
+</head>
+ 
+<body>
+ 
+   <h1>Conversor de Temperatura</h1>
+ 
+   <form class = "temp" name="convert">
+ 
+       <font color="black">  Fahrenheit </font>
+ 
+       <input type="text" name="ftemp" size="8" onchange="convertTemp('ftoc')">
+ 
+       <font color="black"> Celsius </font>
+ 
+       <input type="text" name="ctemp" size="8" onchange="convertTemp('ctof')">
+ 
+       <font color="black"> Kelvin </font>
+ 
+       <input type="text" name="ktemp" size="8" onchange="convertTemp('ktof')">
+ 
+       <br /><br />
+ 
+       <input id="Apagar" type="button" value="Apagar" onclick="clearAll();">
+ 
+   </form>
+ 
+   <div class = "btns">
+       <form method="get" action="index.html">
+ 
+           <button type="submit" class=" efeito efeito1">Voltar para o menu</button>
+ 
+       </form>
+   </div>
+ 
+ 
+ 
+   <script type="text/javascript" src="js/temperatura.js"></script>
+</body>
+ 
+</html>
