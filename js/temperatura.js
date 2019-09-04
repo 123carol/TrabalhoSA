@@ -1,19 +1,20 @@
+// Cálculos de conversões de temperatura 
 function convertTemp(direction) {
  
-    var fObj = document.convert.ftemp, cObj = document.convert.ctemp, kObj = document.convert.ktemp;
+    var fj = document.convert.ftemp, cj = document.convert.ctemp, kj = document.convert.ktemp;
   
     if (direction == "ftoc") {
-        cObj.value = Math.round((fObj.value - 32) * (5 / 9));
-        kObj.value = Math.round(((fObj.value - 32) * (5 / 9)) + (273.15));
+        cj.value = Math.round((fj.value - 32) * (5 / 9));
+        kj.value = Math.round(((fj.value - 32) * (5 / 9)) + (273.15));
     }
     else if (direction == "ktof") {
-        fObj.value = Math.round((kObj.value - 273.15) * (9 / 5)) + 32;
-        cObj.value = Math.round((fObj.value - 32) * (5 / 9));
+        fj.value = Math.round((kj.value - 273.15) * (9 / 5)) + 32;
+        cj.value = Math.round((fj.value - 32) * (5 / 9));
   
     }
     else {
-        fObj.value = Math.round((parseInt(cObj.value) * (9 / 5)) + 32);
-        kObj.value = Math.round((parseInt(cObj.value) + 273));
+        fj.value = Math.round((parseInt(cj.value) * (9 / 5)) + 32);
+        kj.value = Math.round((parseInt(cj.value) + 273));
     }
  }
   
