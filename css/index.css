@@ -1,5 +1,9 @@
+
 body {
 
+/*
+Adicionado cores e mudando o estilo do CSS
+*/
 }
 
 .animation-area {
@@ -78,4 +82,11 @@ h1{
     @keyframes backgroundScroll {
     from {background-position: 0 0;}
     to {background-position: -400px 0;}
+    }
+
+    body {
+/*
+Fizemos mudanças das cores e do estilo finalizados
+*/
+
     }
