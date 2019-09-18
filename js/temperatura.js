@@ -1,3 +1,25 @@
+//Restrição do Kelvin
+function naoNegativo(){
+    alert("Nao existe numeros negativos em Kelvin!");
+}
+
+function NaNegativo(e) {
+    var tecla = (window.event) ? event.keyCode : e.which;
+    if (tecla == 45) {
+        naoNegativo()
+        return false;
+    } else {
+    if ((tecla == 46 || tecla > 47 && tecla < 58)) 
+        return true;
+    else {
+    if (tecla == 8 || tecla == 0)
+        return true;
+    else 
+        return false;
+      }
+    }
+  }
+
 // Cálculos de conversões de temperatura 
 function convertTemp(direction) {
  

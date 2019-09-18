@@ -47,10 +47,10 @@
                <span class="input-group-text" id="inputGroup-sizing-lg">Kelvin</span>
             </div>
             <input name="ktemp" onchange="convertTemp('ktof')" type="text" class="form-control"
-               aria-describedby="inputGroup-sizing-lg">
+               aria-describedby="inputGroup-sizing-lg" onkeypress='return NaNegativo(event)'>
          </div>
       </p>
-
+      
       <br/><br/>
       <button id="Apagar" type="button" class="btn btn-secondary efeito efeito1" onclick="clearAll();">Limpar</button>
 
